@@ -8,84 +8,116 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>James Mathis</h1>
-    <h2>Software Developer</h2>
+    <div id="profile">
+        <div id="basic">
+            <img src="portraitEdit.png" alt="Portrait">
+            <div>
+                <h1>James Mathis</h1>
+                <h2>Software Developer</h2>
+            </div>
+        </div>
 
-    <div class="container" id="bio">
-        <h4>Bio</h4>
+        <div id="tagLine">
+            <p>Improving software for everyone, everywhere.</p>
+        </div>
+    </div>
 
-        <div class="vbar"></div>
-
-        <!-- <div id="content"> -->
-            <div id="copy">
+    <div id="parent">
+        <div id="bioAndSkills">
+            <div id="bio">
                 <p>
-                    Hey, I'm James Mathis! I'm a software developer with a furious passion to improve the lives of every user, everywhere.
+                    Hey, I'm James Mathis! I'm a software developer interested in utility applications and data science.
                     <br><br>
-                    I’ve been programming since I was 10 years old. My passion for computer science started when my father introduced me to HTML. I quickly became addicted and started learning from CodeCademy. I started watching the popular YouTuber Code Bullet use machine learning in various video games. After watching a few videos, I immediately knew that I wanted to work my way up to that level and started with Python.
+                    I’ve been programming since I was 10 years old. My passion for computer science began when my father introduced me to HTML. I quickly became addicted and took lessons on CodeCademy. Eventually, I started watching the popular YouTuber Code Bullet use machine learning in various video games. After watching a few videos, I immediately knew that I wanted to work my way up to that level and got to work learning Python.
                     <br><br>
                     I am currently pursuing a Bachelor's of Science in computer science at the Univervsity of Arkansas.
                 </p>
             </div>
-            <img src="portraitEdit.png" alt="Portrait">
-        <!-- </div> -->
+
+            <div id="skills">
+                <div id="favs">
+                    <h4>Expertise</h4>
+                    <span>
+                        <p>Python</p>
+                        <ul>
+                            <li>Flask</li>
+                            <li>Numpy</li>
+                            <li>Tensorflow</li>
+                        </ul>
+                    </span>
+                    <span>
+                        <p>Javascript</p>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                    </span>
+                </div>
+
+                <div id="others">
+                    <h4>Other Skills</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Firebase (Firestore, Auth)</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="socials">
+            <h4>Socials</h4>
+            <div>
+                <ul>
+                    <li><a href="https://github.com/JamesRMathis"><img src="github.svg" alt="github" width="100px"></a></li>
+                    <li><a href="TODO: CHANGE TO ACTUAL LINK"><img src="linkedin.svg" alt="linkedin" width="100px"></a></li>
+                </ul>
+                <ul>
+                    <li><a href="mailto:jrfmathis06@outlook.com"><img src="envelope-solid.svg" alt="email" width="100px"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <h4>Favorite Stuff</h4>
-        <ol>
-            <li>Python <ul>
-                <li>Flask</li>
-                <li>Numpy</li>
-                <li>Tensorflow</li>
-            </ul></li>
-            <li>Javascript <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-            </ul></li>
-        </ol>
+    <div id="educationAndProjects">
+        <div id="education">
+            <h4>Education</h4>
+            <ul>
+                <li>Computer Programming I<ul>
+                    <li>Java, basics of programming</li>
+                </ul></li>
+                <li>Computer Programming II<ul>
+                    <li>Python, OOP, basic data structures, machine learning</li>
+                </ul></li>
+                <li>Computer Programming III<ul>
+                    <li>Algorithms (DFS, BFS, Dijkstra, etc), advanced data structures</li>
+                </ul></li>
+                <li>Cryptography<ul>
+                    <li>DES, AES, RSA, vulnerabilities, number theory</li>
+                </ul></li>
+                <li>Web Application Development<ul>
+                    <li>HTML/CSS, Javascript, Flask, AJAX</li>
+                </ul></li>
+            </ul>
+        </div>
 
-        <h4>Other Skills</h4>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Firebase (Firestore, Auth)</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <li>Unity</li>
-        </ul>
-
-        <h4>Classes Taken</h4>
-        <ul>
-            <li>Computer Programming I<ul>
-                <li>Java, basics of programming</li>
-            </ul></li>
-            <li>Computer Programming II<ul>
-                <li>Python, OOP, basic data structures, machine learning</li>
-            </ul></li>
-            <li>Computer Programming III<ul>
-                <li>Algorithms (DFS, BFS, Dijkstra, etc), advanced data structures</li>
-            </ul></li>
-            <li>Cryptography<ul>
-                <li>DES, AES, RSA, vulnerabilities, number theory</li>
-            </ul></li>
-            <li>Web Application Development<ul>
-                <li>HTML/CSS, Javascript, Flask, AJAX</li>
-            </ul></li>
-        </ul>
-    </div>
-
-    <div>
-        <h4>Projects</h4>
-        <ul>
-            <li><a href="https://jamesrmathis.github.io/age-sim/">LifeSpin: Lifetime and Death Probability Analysis</a><ul>
-                <li><p>LifeSpin is a web application that simulates the life of a person and calculates the probability of death at any given age.</p></li>
-            </ul></li>
-            <li><a href="">Golden Throne Codex</a><ul>
-                <li>Golden Throne Codex is a list manager for Warhammer 40,000. It is designed to improve upon existing list managers.</li>
-            </ul></li>
-            <li><a href="https://github.com/JamesRMathis/ISEF-Project">The Halt to the Halting Problem</a><ul>
-                <li>The Halt to the Halting Problem is a research project that uses a neural network to analyze Python functions and determine their halting behavior.</li>
-            </ul></li>
+        <div id="projects">
+            <h4>Projects</h4>
+            <ul>
+                <li><a href="https://jamesrmathis.github.io/age-sim/">LifeSpin: Lifetime and Death Probability Analysis</a><ul>
+                    <li><p>LifeSpin is a web application that simulates the life of a person and calculates the probability of death at any given age.</p></li>
+                </ul></li>
+                <li><a href="">Golden Throne Codex</a><ul>
+                    <li>Golden Throne Codex is a list manager for Warhammer 40,000. It is designed to improve upon existing list managers.</li>
+                </ul></li>
+                <li><a href="https://github.com/JamesRMathis/ISEF-Project">The Halt to the Halting Problem</a><ul>
+                    <li>The Halt to the Halting Problem is a research project that uses a neural network to analyze Python functions and determine their halting behavior.</li>
+                    <li>1st place computer science project at ASMSA 2024 Science Fair</li>
+                </ul></li>
+        </div>
     </div>
 </body>
 </html>
