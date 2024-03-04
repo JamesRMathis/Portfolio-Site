@@ -1,442 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: serif;
-    /* background-color: #084B83; */
-    /* background-color: #052B4B; */
-    background-color: #50727B;
+  font-family: serif;
+  background-color: #50727B;
 }
 
 #profile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-
-    padding-bottom: 45px;
-
-    /* background: rgb(146,156,239); */
-    background: linear-gradient(180deg, #78A083 75%, #50727B 100%);
-    
-    /* background: rgb(90,71,184);
-    background: linear-gradient(180deg, rgba(90,71,184,1) 16%, rgba(123,108,198,1) 58%, rgba(255,255,255,1) 100%); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 45px;
+  background: linear-gradient(180deg, #78A083 75%, #50727B 100%);
 }
-
 #profile #basic {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    width: 40%;
-
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 20px;
 }
-
 #profile #tagLine {
-    width: 60%;
-    padding-right: 20px;
-    /* margin-right: 20px; */
-    text-align: center;
-    font-size: 2.2em;
-    font-weight: 600;
+  width: 60%;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 600;
 }
-
 #profile img {
-    width: 40%;
-    height: auto;
-    border-radius: 10%;
+  width: 40%;
+  height: auto;
+  border-radius: 10%;
 }
-
 #profile div {
-    /* width: 100%; */
-    margin-left: 20px;
-    /* text-align: center; */
+  margin-left: 20px;
 }
-
 #profile div h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 #parent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 #bioAndSkills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
 }
-
-#bio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-
-    /* background-color: #202020; */
-    background-color: #35374B;
-    color: #DCC7BE;
-
-    font-size: 1.1em;
-
-    border-radius: 0 20px 20px 0;
+#bioAndSkills #bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #35374B;
+  color: #DCC7BE;
+  font-size: 1.1em;
+  border-radius: 0 20px 20px 0;
 }
-
-#skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    width: 40%;
-
-    margin-top: 20px;
-    padding: 20px;
-
-    /* background-color: #202020; */
-    background-color: #35374B;
-    /* color: #a0a0a0; */
-    color: #DCC7BE;
-
-    border-radius: 0 20px 20px 0;
+#bioAndSkills #skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #35374B;
+  color: #DCC7BE;
+  border-radius: 0 20px 20px 0;
 }
-
-#skills #favs {
-    margin-left: 10px;
-    margin-right: 20px;
+#bioAndSkills #skills #favs {
+  margin-left: 10px;
+  margin-right: 20px;
 }
-
-#skills #vbar {
-    height: 100%;
-    width: 1px;
-    /* background-color: #a0a0a0; */
-    background-color: #DCC7BE;
+#bioAndSkills #skills #vbar {
+  height: 100%;
+  width: 1px;
+  background-color: #DCC7BE;
 }
-
-#skills #others {
-    margin-left: 35px;
+#bioAndSkills #skills #others {
+  margin-left: 35px;
 }
-
-#skills h4 {
-    margin-bottom: 10px;
-    font-size: 2em;
+#bioAndSkills #skills h4 {
+  margin-bottom: 10px;
+  font-size: 2em;
 }
-
-#skills #favs p {
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    text-decoration: underline;
+#bioAndSkills #skills #favs p {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
-
-#skills ul {
-    list-style-type: circle;
-    font-size: 1.1em;
+#bioAndSkills #skills ul {
+  list-style-type: circle;
+  font-size: 1.1em;
 }
 
 #socials {
-    width: 20%;
-    margin-right: 5%;
+  width: 20%;
+  margin-right: 5%;
 }
-
 #socials h4 {
-    margin-bottom: 10px;
-    font-size: 2em;
-    text-align: center;
-
-    color: #35374B;
+  margin-bottom: 10px;
+  font-size: 2em;
+  text-align: center;
+  color: #35374B;
 }
-
 #socials div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-#socials ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    list-style-type: none;
-    font-size: 1.5em;
+#socials div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.5em;
 }
-
-#socials ul li {
-    margin-bottom: 10px;
+#socials div ul li {
+  margin-bottom: 10px;
 }
-
-@media (max-width: 1110px) {
-    #socials .svg {
-        /* fill: #a0a0a0; */
-        width: 80px;
-    }
-}
-
 #socials .svg {
-    fill: #35374B;
-    width: 100px;
+  fill: #35374B;
+  width: 100px;
 }
-
 #socials .svg:hover {
-    fill: #4A4D69 !important;
-    text-decoration: none;
+  fill: #4A4D69 !important;
+  text-decoration: none;
+}
+@media (max-width: 1110px) {
+  #socials .svg {
+    width: 80px;
+  }
 }
 
 #educationAndProjects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    /* width: 70%; */
-
-    margin-top: 50px;
-    margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: auto;
+}
+#educationAndProjects #education {
+  width: 30%;
+  padding: 20px;
+  background-color: #35374B;
+  color: #DCC7BE;
+}
+#educationAndProjects #education h4 {
+  font-size: 2em;
+}
+#educationAndProjects #education ul {
+  font-size: 1.1em;
+}
+#educationAndProjects #education ul > li > ul {
+  margin-left: 30px;
+  list-style-type: square;
+  font-size: 1em;
+}
+#educationAndProjects #projects {
+  width: 50%;
+  padding: 20px;
+  background-color: #35374B;
+  color: #DCC7BE;
+}
+#educationAndProjects #projects h4 {
+  font-size: 2em;
+}
+#educationAndProjects #projects ul {
+  font-size: 1.1em;
+}
+#educationAndProjects #projects ul > li > ul {
+  margin-left: 30px;
+  list-style-type: square;
+  font-size: 1em;
+}
+#educationAndProjects #projects a {
+  color: #CEB0A4;
+  text-decoration: none;
+}
+#educationAndProjects #projects a:hover {
+  color: #E9DBD6;
 }
 
-#education {
-    width: 30%;
-
-    /* padding: 20px; */
-    padding-top: 20px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-
-    /* background-color: #202020; */
-    background-color: #35374B;
-    /* color: #a0a0a0; */
-    color: #DCC7BE;
-}
-
-#education h4 {
-    font-size: 2em;
-}
-
-#education ul {
-    font-size: 1.1em;
-}
-
-#education ul > li > ul {
-    margin-left: 30px;
-    list-style-type: square;
-    font-size: 1em;
-}
-
-#projects {
-    width: 50%;
-
-    padding-top: 20px;
-    padding-left: 30px;
-
-    /* background-color: #202020; */
-    background-color: #35374B;
-    /* color: #a0a0a0; */
-    color: #DCC7BE;
-}
-
-#projects h4 {
-    font-size: 2em;
-}
-
-#projects ul {
-    font-size: 1.1em;
-}
-
-#projects ul > li > ul {
-    margin-left: 30px;
-    list-style-type: square;
-    font-size: 1em;
-}
-
-#projects a {
-    color: #CEB0A4;
-    text-decoration: none;
-}
-
-#projects a:hover {
-    color: #E9DBD6;
-}
-
-/* #bio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#bio span {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 12%;
-}
-
-#bio div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin-left: 0;
-    margin-right: auto;
-    width: 60%;
-
-    background-color: #202020;
-    color: #a0a0a0;
-
-    text-align: center;
-
-    border-radius: 0 10px 10px 0;
-}
-
-#bio h4 {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
-
-    width: 50px;
-
-    font-size: 3em;
-}
-
-#bio .vbar {
-    height: 1;
-    width: 1px;
-    background-color: #a0a0a0;
-
-    margin: 0 30px 0 40px;
-}
-
-#bio img {
-    width: 30%;
-    height: 30%;
-    border-radius: 10%;
-    padding: 20px;
-
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#bio div #copy {
-    text-align: left;
-    font-size: 1.1em;
-
-    max-width: 50%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#education {
-    width: 80%;
-
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    background-color: #202020;
-    color: #a0a0a0;
-    text-align: center;
-
-    border-radius: 10px 10px 0 0;
-}
-
-#education h4 {
-    font-size: 2em;
-}
-
-#education ul {
-    margin-left: auto;
-    margin-right: auto;
-
-    width: fit-content;
-
-    list-style-type: circle;
-    font-size: 1.1em;
-}
-
-#education ul li {
-    text-align: left;
-}
-
-#education ul li ul {
-    margin-left: 30px;
-    list-style-type: square;
-    font-size: 1em;
-}
-
-#skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-
-    width: 80%;
-
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-bottom: 20px;
-
-    background-color: #202020;
-    color: #a0a0a0;
-
-    border-radius: 0 0 10px 10px;
-}
-
-#skills div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-
-    margin-left: 0;
-    margin-right: auto;
-    width: 60%;
-
-    text-align: center;
-}
-
-#skills h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 2em;
-}
-
-#skills span p {
-    margin-bottom: 5px;
-    font-size: 1.5em;
-    text-decoration: underline;
-}
-
-#skills span ul {
-    list-style-type: circle;
-    font-size: 1.1em;
-}
-
-#skills #others ul {
-    text-align: left;
-    list-style-type: circle;
-    font-size: 1.1em;
-} */
+/*# sourceMappingURL=index.css.map */
