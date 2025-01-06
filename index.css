@@ -16,12 +16,16 @@ body {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 570px) {
+  #profile {
+    justify-content: center;
+  }
+}
 #profile #basic {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 40%;
   padding: 20px;
   color: #202020;
 }
@@ -30,22 +34,28 @@ body {
   height: auto;
   border-radius: 10%;
 }
-@media (max-width: 980px) {
-  #profile #basic {
-    width: 60%;
-    font-size: 0.8em;
-  }
-}
-@media (max-width: 700px) {
+@media (max-width: 570px) {
   #profile img {
-    width: 40%;
+    display: none;
   }
 }
 #profile div {
   margin-left: 20px;
 }
 #profile div h1 {
-  font-size: 3em;
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+@media (max-width: 570px) {
+  #profile div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile div h2 {
+    width: auto;
+    display: inline-block;
+  }
 }
 
 #parent {
@@ -55,106 +65,57 @@ body {
   margin-top: 20px;
 }
 
-#bioAndSkills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 70%;
-}
-#bioAndSkills #bio {
+#skills {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #35374B;
-  color: #DCC7BE;
-  font-size: 1.3em;
-  border-radius: 0 20px 20px 0;
-}
-@media (max-width: 570px) {
-  #bioAndSkills #bio {
-    font-size: 1.1em;
-  }
-}
-@media (max-width: 400px) {
-  #bioAndSkills #bio {
-    font-size: 0.9em;
-  }
-}
-#bioAndSkills #skills {
-  display: flex;
-  flex-direction: row;
+  flex-grow: 0.8;
   justify-content: space-around;
-  width: 40%;
-  margin-top: 20px;
-  padding: 20px;
+  width: auto;
+  padding: 1rem;
   background-color: #35374B;
   color: #DCC7BE;
   border-radius: 0 20px 20px 0;
 }
-#bioAndSkills #skills #favs {
-  margin-left: 10px;
-  margin-right: 20px;
+#skills .outer {
+  list-style: none;
 }
-#bioAndSkills #skills #vbar {
+#skills .outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+#skills .inner {
+  list-style: none;
+}
+#skills #favs {
+  padding-inline: 1rem;
+}
+#skills #vbar {
   height: 100%;
   width: 1px;
   background-color: #DCC7BE;
 }
-#bioAndSkills #skills #others {
-  margin-left: 35px;
+#skills #others {
+  padding-inline: 1rem;
 }
-#bioAndSkills #skills h4 {
+#skills #others ul {
+  list-style: none;
+}
+#skills h4 {
   margin-bottom: 10px;
-  font-size: 2em;
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  white-space: nowrap;
 }
-#bioAndSkills #skills #favs p {
+#skills #favs p {
   margin-bottom: 5px;
-  font-size: 1.5em;
+  font-size: clamp(1.5rem, 3vw, 3rem);
   text-decoration: underline;
 }
-#bioAndSkills #skills ul {
-  list-style-type: circle;
-  font-size: 1.2em;
-}
-@media (max-width: 980px) {
-  #bioAndSkills #skills {
-    width: 60%;
-  }
-}
-@media (max-width: 570px) {
-  #bioAndSkills #skills {
-    width: 90%;
-  }
-}
-@media (max-width: 490px) {
-  #bioAndSkills #skills h4 {
-    font-size: 1.5em;
-  }
-  #bioAndSkills #skills ul {
-    font-size: 1.1em;
-  }
-}
-@media (max-width: 400px) {
-  #bioAndSkills #skills {
-    width: 100%;
-  }
-  #bioAndSkills #skills h4 {
-    font-size: 1.2em;
-  }
-  #bioAndSkills #skills #favs p {
-    font-size: 1em !important;
-  }
-  #bioAndSkills #skills ul {
-    font-size: 0.8em;
-    list-style-type: none;
-  }
+#skills .skill {
+  font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
 #socials {
-  width: 20%;
-  margin-right: 5%;
+  width: 30%;
+  margin-right: 10px;
 }
 #socials h4 {
   margin-bottom: 10px;
@@ -179,27 +140,25 @@ body {
 }
 #socials .svg {
   fill: #35374B;
-  width: 100px;
+  width: 10vw;
 }
 #socials .svg:hover {
   fill: #4A4D69 !important;
   text-decoration: none;
 }
-@media (max-width: 1110px) {
-  #socials .svg {
-    width: 80px;
-  }
-}
 
-@media (max-width: 880px) {
+@media (max-width: 700px) {
   #socials {
-    margin-right: 10px;
+    margin-right: 20px;
+  }
+  #socials h4 {
+    display: none;
   }
   #socials div {
     display: flex;
     flex-direction: column;
     justify-self: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
   #socials div ul {
     display: block;
@@ -212,12 +171,8 @@ body {
   #socials {
     justify-content: center;
     width: 20%;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  #socials h4 {
-    font-size: large;
-    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 #highlights {
@@ -225,9 +180,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
-  margin-left: auto;
 }
-#highlights #education {
+#highlights #education, #highlights #achievements, #highlights #projects {
   width: 25%;
   border-radius: 0 20px 20px 0;
   padding: 20px;
@@ -235,54 +189,24 @@ body {
   background-color: #35374B;
   color: #DCC7BE;
 }
-#highlights #education h4 {
+#highlights #education h4, #highlights #achievements h4, #highlights #projects h4 {
   font-size: 1.75em;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
-#highlights #education ul {
+#highlights #education ul, #highlights #achievements ul, #highlights #projects ul {
   font-size: 1.45em;
 }
-#highlights #education ul > li > ul {
+#highlights #education ul > li > ul, #highlights #achievements ul > li > ul, #highlights #projects ul > li > ul {
   margin-left: 30px;
   list-style-type: square;
   font-size: 0.9em;
 }
 #highlights #achievements {
-  width: 25%;
   border-radius: 20px;
-  padding: 20px;
-  padding-left: 30px;
-  background-color: #35374B;
-  color: #DCC7BE;
-}
-#highlights #achievements h4 {
-  font-size: 1.75em;
-}
-#highlights #achievements ul {
-  font-size: 1.45em;
-}
-#highlights #achievements ul > li > ul {
-  margin-left: 30px;
-  list-style-type: square;
-  font-size: 0.9em;
 }
 #highlights #projects {
-  width: 25%;
   border-radius: 20px 0 0 20px;
-  padding: 20px;
-  padding-left: 30px;
-  background-color: #35374B;
-  color: #DCC7BE;
-}
-#highlights #projects h4 {
-  font-size: 1.75em;
-}
-#highlights #projects ul {
-  font-size: 1.25em;
-}
-#highlights #projects ul > li > ul {
-  margin-left: 30px;
-  list-style-type: square;
-  font-size: 0.9em;
 }
 #highlights #projects a {
   color: #CEB0A4;
@@ -298,22 +222,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
   }
-  #highlights #education {
+  #highlights #education, #highlights #achievements, #highlights #projects {
     width: 80%;
+    border-radius: 20px;
+  }
+  #highlights > div:not(:last-child) {
     margin-bottom: 20px;
-    border-radius: 20px;
-  }
-  #highlights #achievements {
-    width: 80%;
-    margin-bottom: 20px;
-    border-radius: 20px;
-  }
-  #highlights #projects {
-    width: 80%;
-    border-radius: 20px;
   }
 }
 
